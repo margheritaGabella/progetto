@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.animation.*?>
+	
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: #fae6f4; " xmlns="http://javafx.com/javafx/17.0.14" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.java.login.ControllerLogin">
+    <StackPane alignment="CENTER" layoutX="290" layoutY="80">
+
+        <VBox fx:id="loginPane" alignment="CENTER" spacing="10">
+            <Label text="Login" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+            <TextField fx:id="usernameLogin" promptText="Username" />
+            <PasswordField fx:id="passwordLogin" promptText="Password" />
+            <Label fx:id="errorMessageLogin" text="" textFill="red" />
+            <Button text="Login" onAction="#login" textFill="#ed34b2"/>
+            <Button text="Non hai un account? Registrati" onAction="#switchToSignupScene" textFill="#ed34b2"/>
+        </VBox>
+        
+    </StackPane>
+</AnchorPane>

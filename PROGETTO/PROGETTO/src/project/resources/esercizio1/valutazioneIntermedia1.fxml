@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: #fae6f4;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.java.esercizio1.ControllerValutazioneIntermedia1">
+   <children>
+      <AnchorPane prefHeight="450.0" prefWidth="323.0" style="-fx-background-color: f2acdc;">
+         <children>
+            <Label fx:id="lblLivello" layoutX="31.0" layoutY="75.0" text="LIVELLO SUPERATO! " textFill="#ed34b2">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Button fx:id="goToExercise1" layoutX="185.0" layoutY="358.0" mnemonicParsing="false" onMouseClicked="#switchToExercise1" prefHeight="55.0" prefWidth="107.0" text="PROSSIMO " textFill="#ed34b2" />
+            <Button fx:id="goToDashboard" layoutX="31.0" layoutY="358.0" mnemonicParsing="false" onMouseClicked="#switchToDashboard" prefHeight="55.0" prefWidth="107.0" text="RITENTA" textFill="#ed34b2" />
+            <Label fx:id="lblRisposteCorrette" layoutX="35.0" layoutY="121.0" text="RISPOSTE CORRETTE:" textFill="#ed34b2">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRisposteSbagliate" layoutX="35.0" layoutY="155.0" text="RISPOSTE SBAGLIATE: " textFill="#ed34b2">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="387.0" layoutY="22.0" text="DOMANDA 1 - RISPOSTA: VERO  " textFill="#ed34b2">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="385.0" layoutY="157.0" text="DOMANDA 2 - RISPOSTA FALSO " textFill="#ed34b2">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="386.0" layoutY="286.0" text="DOMANDA 3 - RISPOSTA VERO " textFill="#ed34b2">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="testoDomanda1" layoutX="385.0" layoutY="70.0" prefHeight="70.0" prefWidth="277.0" text="Un blocco 'try' può essere seguito da&#10;un blocco'finally' senza la necessità &#10;di un 'catch'">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="testoDomanda2" layoutX="387.0" layoutY="205.0" prefHeight="70.0" prefWidth="277.0" text="Java è un linguaggio a tipizzazione &#10;statica, quindi ogni variabile&#10;deve avere un tipo dichiarato&#10;&#10;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="testoDomanda3" layoutX="385.0" layoutY="334.0" prefHeight="70.0" prefWidth="277.0" text="Questo è il punto di ingresso del &#10;programma in Java. &#10;La firma esatta 'public static void main(String[] args)' &#10;è necessaria" />
+      <Label layoutX="387.0" layoutY="48.0" text="MOTIVAZIONE:" textFill="#ed34b2">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="387.0" layoutY="183.0" text="MOTIVAZIONE:" textFill="#ed34b2">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="387.0" layoutY="312.0" text="MOTIVAZIONE:" textFill="#ed34b2">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

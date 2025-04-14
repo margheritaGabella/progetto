@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.ProgressBar?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: #fae6f4;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.java.dashboard.ControllerDashboard">
+   <children>
+      <AnchorPane layoutX="36.0" layoutY="181.0" prefHeight="228.0" prefWidth="200.0" style="-fx-background-color: f2acdc;">
+         <children>
+            <ProgressBar fx:id="barra1" layoutX="50.0" layoutY="200.0" prefWidth="100.0" progress="0.0" style="-fx-background-color: #f2acdc; -fx-background-radius: 5; -fx-border-color: #ed34b2; -fx-border-radius: 5;" />
+            <Button fx:id="goToExercise1Home" layoutX="61.0" layoutY="136.0" mnemonicParsing="false" onMouseClicked="#switchToExercise1Home" prefHeight="44.0" prefWidth="79.0" text="INIZIA" textFill="#ed34b2" />
+            <Label layoutX="25.0" layoutY="25.0" prefHeight="26.0" prefWidth="151.0" style="-fx-background-color: E0E0E0; -fx-background-radius: 10;" text="  VERO O FALSO " textFill="#ed34b2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextArea layoutX="42.0" layoutY="72.0" prefHeight="44.0" prefWidth="116.0" style="-fx-background-color: #f2acdc;" editable="fasle" text="esercizio di scelta&#10;  tra vero o falso" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="300.0" layoutY="181.0" prefHeight="228.0" prefWidth="200.0" style="-fx-background-color: f2acdc;">
+         <children>
+            <ProgressBar fx:id="barra2" layoutX="50.0" layoutY="200.0" prefWidth="100.0" progress="0.0" style="-fx-background-color: #f2acdc; -fx-background-radius: 5; -fx-border-color: #ed34b2; -fx-border-radius: 5;" />
+            <Button fx:id="goToExercise2Home" layoutX="61.0" layoutY="136.0" mnemonicParsing="false" onMouseClicked="#switchToExercise2Home" prefHeight="44.0" prefWidth="79.0" text="INIZIA" textFill="#ed34b2" />
+            <Label layoutX="69.0" layoutY="25.0" prefHeight="26.0" prefWidth="63.0" style="-fx-background-color: E0E0E0; -fx-background-radius: 10;" text="  QUIZ" textFill="#ed34b2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextArea layoutX="42.0" layoutY="62.0" prefHeight="65.0" prefWidth="116.0" style="-fx-background-color: #f2acdc;" editable="fasle" text="esercizio di scelta&#10;       a risposta&#10;          mutipla" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="555.0" layoutY="181.0" prefHeight="228.0" prefWidth="200.0" style="-fx-background-color: f2acdc;">
+         <children>
+            <Button fx:id="goToExercise3Home" layoutX="61.0" layoutY="136.0" mnemonicParsing="false" onMouseClicked="#switchToExercise3Home" prefHeight="44.0" prefWidth="79.0" text="INIZIA" textFill="#ed34b2" />
+            <Label layoutX="72.0" layoutY="25.0" style="-fx-background-color: E0E0E0; -fx-background-radius: 10;" text="BELLA" textFill="#ed34b2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="65.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="goToLogin" fitHeight="55.0" fitWidth="55.0" layoutX="5.0" layoutY="7.0" onMouseClicked="#switchToLoginScene" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/delete.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="goToInfo" fitHeight="55.0" fitWidth="55.0" layoutX="730.0" layoutY="7.0" onMouseClicked="#switchToInfoScene" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/info.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="welcomeTextDashboard" alignment="CENTER" contentDisplay="CENTER" layoutY="67.0" prefHeight="42.0" prefWidth="800.0" textAlignment="CENTER" text="Ciao" textFill="#ed34b2">
+         <font>
+            <Font name="SansSerif Regular" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

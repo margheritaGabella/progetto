@@ -1,0 +1,67 @@
+[
+          {
+            "tipoEsercizio": 0,
+            "livello": 0,
+            "testo": "Ogni programma Java deve avere almeno una classe.",
+            "rispostaEsatta": "VERO",
+            "motivazione": "In Java, tutto il codice deve essere all'interno di una classe, anche il metodo 'main' che avvia il programma"
+          },
+          {
+            "tipoEsercizio": 0,
+            "livello": 0,
+            "testo": "In java, si può dichiarare una variabile senza specificarne il tipo.",
+            "rispostaEsatta": "FALSO",
+            "motivazione": "Java è un linguaggio a tipizzazione statica, quindi ogni variabile deve avere un tipo dichiarato"
+          },
+          {
+            "tipoEsercizio": 0,
+            "livello": 0,
+            "testo": "Il metodo 'main' in Java deve avere la firma 'public static void main(String[] args)'.",
+            "rispostaEsatta": "VERO",
+            "motivazione": "Questo è il punto di ingresso del programma in Java. La firma esatta 'public static void main(String[] args)' è necessaria"
+          },
+          {
+            "tipoEsercizio": 0,
+            "livello": 1,
+            "testo": "Un metodo 'static' in Java può accedere direttamente a variabili di istanza della classe.",
+            "rispostaEsatta": "FALSO",
+            "motivazione": "I metodi static appartengono alla classe e non a una specifica istanza, quindi non possono accedere direttamente alle variabili di istanza (non statiche). Per farlo, devono creare un'istanza della classe"
+          },
+          {"tipoEsercizio": 0,
+            "livello": 1,
+            "testo": "In Java, un'interfaccia può contenere metodi con implementazione predefinita.",
+            "rispostaEsatta": "VERO",
+            "motivazione": "A partire da Java 8, le interfacce possono contenere metodi default con un'implementazione predefinita"
+          },
+          {
+            "tipoEsercizio": 0,
+            "livello": 1,
+            "testo": "In Java, un blocco 'try' deve sempre essere seguito da un blocco 'catch'.",
+            "rispostaEsatta": "FALSO",
+            "motivazione": "Un blocco 'try' può essere seguito da un blocco 'finally' senza la necessità di un 'catch'"
+          },
+          {
+            "tipoEsercizio": 0,
+            "livello": 2,
+            "testo": "In java, un 'enum' può estendere una classe.",
+            "rispostaEsatta": "FALSO",
+            "motivazione": "Un 'enum' in Java non può estendere una classe poiché eredita automaticamente da 'java.lang.Enum', che è già una classe e Java non supporta l'ereditarietà multipla. Tuttavia, un 'enum' può implementare interfacce"
+          },
+          {
+            "tipoEsercizio": 0,
+            "livello": 2,
+            "testo": "Un'interfaccia funzionale in Java può avere più di un metodo astratto",
+            "rispostaEsatta": "FALSO",
+            "motivazione": "Un'interfaccia funzionale (annotata con '@FunctionalInterface') deve avere esattamente un solo metodo astratto. Può avere più metodi 'default' o 'static', ma solo un metodo astratto"
+          },
+          {
+            "tipoEsercizio": 0,
+            "livello": 2,
+            "testo": "Il costruttore di una classe 'final' può essere reso private.",
+            "rispostaEsatta": "VERO",
+            "motivazione": "Una classe 'final' impedisce l'ereditarietà, mentre un costruttore 'private' impedisce la creazione di istanze esterne"
+          }
+
+          
+        ]
+      

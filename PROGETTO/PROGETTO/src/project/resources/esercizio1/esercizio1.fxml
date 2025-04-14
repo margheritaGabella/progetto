@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: fae6f4;" xmlns="http://javafx.com/javafx/17.0.14" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.java.esercizio1.ControllerEsercizio1">
+   <children>
+      <CheckBox layoutX="400.0" layoutY="225.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="96.0" text="VERO">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="596.0" layoutY="225.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="96.0" text="FALSO">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <AnchorPane prefHeight="450.0" prefWidth="323.0" style="-fx-background-color: f2acdc;">
+         <children>
+            <ImageView fx:id="goToDashboard" fitHeight="55.0" fitWidth="55.0" onMouseClicked="#switchToDashboardScene" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/undo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblLivello" layoutX="10.0" layoutY="75.0" text="LIVELLO " textFill="#ed34b2">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDomanda" layoutX="10.0" layoutY="115.0" text="DOMANDA " textFill="#ed34b2">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="goToExercise1" layoutX="77.0" layoutY="339.0" mnemonicParsing="false" onMouseClicked="#switchToExercise1" prefHeight="59.0" prefWidth="153.0" text="PROSSIMA DOMANDA" textFill="#ed34b2" />
+            <ImageView fitHeight="111.0" fitWidth="107.0" layoutX="95.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="project/resources/images/quiz.png"/>
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+     <TextArea fx:id="testoDomanda" editable="false" layoutX="392.0" layoutY="121.0" prefHeight="82.0" prefWidth="330.0" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextArea>
+         <Button fx:id="goToValutazioneIntermedia" layoutX="600.0" layoutY="339.0" mnemonicParsing="false" onMouseClicked="#switchToValutazioneIntermedia" prefHeight="59.0" prefWidth="153.0" text="VALUTAZIONE" textFill="#ed34b2" />
+   </children>
+</AnchorPane>
